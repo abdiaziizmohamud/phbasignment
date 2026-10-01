@@ -1,7 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 <?php
-// ==========================================
-// Question 1: One-Dimensional Array Analysis
-// ==========================================
+// Question 1:
 
 $numbers = [5, -7, 12, 10, -7, 11, -6, 12, 1, -7, 2, 9];
 
@@ -46,9 +54,7 @@ echo "Minimum element: " . $min . " (at index positions: " . implode(", ", $minP
 echo "Maximum element: " . $max . " (at index positions: " . implode(", ", $maxPositions) . ")<br><br>";
 
 
-// ==========================================
-// Question 2: Color Matrix (2D Associative Array)
-// ==========================================
+// Question 2:
 
 $colors = [
     "Light" => [
@@ -83,9 +89,8 @@ foreach ($colors as $rowName => $columns) {
 echo "</table><br><br>";
 
 
-// ==========================================
-// Question 3: Student Details Table (2D Associative Array)
-// ==========================================
+
+// Question 3:
 
 $students = [
     "CA221" => [
