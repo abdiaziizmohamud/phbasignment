@@ -10,7 +10,7 @@
 
     <select name="pob[]" multiple>
         <option value="">Select District</option>
-        <option value="Mogadishu">Mogadishu</option>
+        <option value="Kaxda">Kaxda</option>
         <option value="Hodan">Hodan</option>
         <option value="Wadajir">Wadajir</option>
     </select>
@@ -24,7 +24,7 @@
 if (!empty($_POST['pob'])) {
 
     foreach ($_POST['pob'] as $pop) {
-        echo "<br>Your place of birth is: " . htmlspecialchars($pop);
+        echo "<br>Dagmada : " . htmlspecialchars($pop);
     }
 
 } else {

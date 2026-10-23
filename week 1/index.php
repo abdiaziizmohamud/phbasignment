@@ -19,7 +19,7 @@
 
     $my_str = 'welcome to php republic';
     echo strlen($my_str);
-    echo str_word_count($my_str); // Waxaa lagu daray semicolon (;)
+    echo str_word_count($my_str); 
     ?>
 </body>
 </html>
