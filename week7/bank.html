@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Account & Transaction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="form-card">
+            <div class="brand">
+                <div class="brand-icon">
+                
+                </div>
+                <div>
+                    <h1>Banking Account Form</h1>
+                    <p class="eyebrow">BANKING SERVICES</p>
+                   
+                </div>
+            </div>
+            <p class="intro">Enter the customer and transaction details below. This is a demonstration system and does not process real banking transactions.</p>
+
+            <form action="process.php" method="POST" enctype="multipart/form-data">
+                <div class="section-heading">Customer Information</div>
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="full_name">Customer Full Name</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="Enter full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="account_number">Account Number</label>
+                        <input type="text" id="account_number" name="account_number" placeholder="Enter account number" required>
+                    </div>
+                    <div class="field">
+                        <label>Gender</label>
+                        <div class="choice-row">
+                            <label class="choice"><input type="radio" name="gender" value="Male" required> Male</label>
+                            <label class="choice"><input type="radio" name="gender" value="Female"> Female</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="account_type">Account Type</label>
+                        <select id="account_type" name="account_type" required>
+                            <option value="">Select account type</option>
+                            <option value="Savings">Savings</option>
+                            <option value="Current">Current</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="section-heading">Transaction Details</div>
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="opening_balance">Opening Balance ($)</label>
+                        <input type="number" id="opening_balance" name="opening_balance" min="0" step="0.01" placeholder="0.00" required>
+                    </div>
+                    <div class="field">
+                        <label>Transaction Type</label>
+                        <div class="choice-row">
+                            <label class="choice"><input type="radio" name="transaction_type" value="Deposit" required> Deposit</label>
+                            <label class="choice"><input type="radio" name="transaction_type" value="Withdrawal"> Withdrawal</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="transaction_amount">Transaction Amount ($)</label>
+                        <input type="number" id="transaction_amount" name="transaction_amount" min="0.01" step="0.01" placeholder="0.00" required>
+                    </div>
+                    <div class="field">
+                        <label for="duration">Account Duration (Years)</label>
+                        <input type="number" id="duration" name="duration" min="0" step="1" placeholder="e.g. 2" required>
+                    </div>
+                </div>
+
+                <div class="section-heading">Identification Document</div>
+                <div class="field upload-field">
+                    <label for="id_document">Upload identification document</label>
+                    <input type="file" id="id_document" name="id_document" required>
+                    <small>Maximum file size: 2 MB. Use a harmless sample document for testing.</small>
+                </div>
+
+                <div class="button-row">
+                    <button type="submit" class="primary-button">Process Transaction</button>
+                    <button type="reset" class="secondary-button">Reset Form</button>
+                </div>
+                <p class="security-note">Demo only · Do not enter real banking or sensitive personal information.</p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

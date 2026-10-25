@@ -22,7 +22,6 @@ function calculateGrade($average)
     } else {
         return 'F';
     }
-}
 
 function checkResult($average)
     {
